@@ -13,7 +13,7 @@ export function Component() {
   const [model, setModel] = useState("gpt-3.5-turbo-1106");
   const [buttonText, setButtonText] = useState("Generate Link");
 
-  const handleClick = async (event: MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const handleClick = async (event: MouseEvent) => {
     event.preventDefault();
     const body = {
       url: url,
